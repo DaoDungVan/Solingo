@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.expo/
+.env
+.env.local
+*.log
+.DS_Store
+
+# audio cache sinh ra khi chạy (TTS)
+backend/storage/

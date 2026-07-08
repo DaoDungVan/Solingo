@@ -1,0 +1,12 @@
+{
+  "name": "solingo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Solingo — app học tiếng Anh (web + mobile). backend (Express+TS) + apps/mobile (Expo). Hai project độc lập, không dùng workspaces (tránh Metro hoisting trên Expo SDK 57).",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:mobile": "npm --prefix apps/mobile run start",
+    "web": "npm --prefix apps/mobile run web",
+    "typecheck:backend": "npm --prefix backend run typecheck"
+  }
+}

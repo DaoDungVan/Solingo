@@ -1,0 +1,23 @@
+# Render Blueprint — deploy backend Solingo.
+# Trên Render: New → Blueprint → chọn repo này. Render đọc file này để tạo service.
+# 3 biến bí mật (sync:false) phải tự điền trong dashboard Render (không nằm trong Git).
+services:
+  - type: web
+    name: solingo-backend
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: DATABASE_URL
+        sync: false # điền trong dashboard: connection string Supabase (pooler 6543)
+      - key: JWT_SECRET
+        sync: false # điền trong dashboard: chuỗi bí mật dài ngẫu nhiên
+      - key: GEMINI_API_KEY
+        sync: false # điền trong dashboard: key aistudio.google.com
