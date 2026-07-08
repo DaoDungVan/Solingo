@@ -19,7 +19,15 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "Solingo",
+      "shortName": "Solingo",
+      "lang": "vi",
+      "description": "Học tiếng Anh 4 kỹ năng với AI — nghe, nói, đọc, viết",
+      "themeColor": "#2563EB",
+      "backgroundColor": "#EEF3FF",
+      "display": "standalone",
+      "orientation": "portrait"
     },
     "plugins": [
       "expo-router",
