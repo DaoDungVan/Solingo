@@ -9,5 +9,8 @@ dist/
 # Công cụ dev (Claude Code) — không đưa lên repo
 .claude/
 
+# Ghi chú kế hoạch nội bộ — không public
+PLAN.md
+
 # audio cache sinh ra khi chạy (TTS)
 backend/storage/
