@@ -6,6 +6,7 @@ services:
     name: solingo-backend
     runtime: node
     plan: free
+    region: singapore # gần VN + cùng khu với DB Supabase (ap-southeast-1) → nhanh
     rootDir: backend
     buildCommand: npm install
     startCommand: npm start
