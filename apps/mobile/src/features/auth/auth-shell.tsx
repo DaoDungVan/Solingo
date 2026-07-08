@@ -18,9 +18,9 @@ export function AuthShell({ children }: { children: ReactNode }) {
       <View style={{ flex: 1, flexDirection: 'row', backgroundColor: c.background }}>
         <View style={[styles.brand, { backgroundColor: c.primary }]}>
           <Image
-            source={require('@/assets/images/adaptive-foreground.png')}
+            source={require('@/assets/images/icon.png')}
             style={styles.brandMark}
-            resizeMode="contain"
+            resizeMode="cover"
           />
           <Text style={styles.brandTitle}>Solingo</Text>
           <Text style={styles.brandTag}>
@@ -51,7 +51,7 @@ export function AuthShell({ children }: { children: ReactNode }) {
 const styles = StyleSheet.create({
   formCol: { width: '100%', maxWidth: 380, gap: 8, alignSelf: 'center' },
   brand: { width: '42%', maxWidth: 460, alignItems: 'center', justifyContent: 'center', padding: 48, gap: 16 },
-  brandMark: { width: 96, height: 96, tintColor: '#ffffff' },
+  brandMark: { width: 108, height: 108, borderRadius: 24 },
   brandTitle: { color: '#ffffff', fontSize: 40, fontWeight: '800' },
   brandTag: { color: '#ffffffdd', fontSize: 16, textAlign: 'center', lineHeight: 24, maxWidth: 340 },
   formSide: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32 },
