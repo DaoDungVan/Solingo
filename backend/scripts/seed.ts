@@ -189,6 +189,122 @@ const LESSONS: SeedLesson[] = [
       { kind: 'shadowing', text: 'I would appreciate it if you could reply soon.', answers: ['I would appreciate it if you could reply soon.'] },
     ],
   },
+
+  // ═══ THÊM: Nghe & Viết ═══
+  {
+    type: 'dictation', title: 'Gia đình & bạn bè', level: 'A1', order_index: 3,
+    items: [
+      { kind: 'dictation', text: 'This is my mother and my father.', answers: ['This is my mother and my father.'] },
+      { kind: 'dictation', text: 'I have one brother and two sisters.', answers: ['I have one brother and two sisters.'] },
+      { kind: 'dictation', text: 'My best friend lives near my house.', answers: ['My best friend lives near my house.'] },
+      { kind: 'fill_blank', text: 'We are a happy family.', display: 'We ___ a happy family.', answers: ['are'] },
+      { kind: 'fill_blank', text: 'She has a small dog.', display: 'She ___ a small dog.', answers: ['has'] },
+    ],
+  },
+  {
+    type: 'dictation', title: 'Kế hoạch cuối tuần', level: 'A2', order_index: 2,
+    items: [
+      { kind: 'dictation', text: 'We are going to visit my grandparents.', answers: ['We are going to visit my grandparents.'] },
+      { kind: 'dictation', text: 'They will meet us at the station.', answers: ['They will meet us at the station.'] },
+      { kind: 'dictation', text: 'I need to buy some food for dinner.', answers: ['I need to buy some food for dinner.'] },
+      { kind: 'fill_blank', text: 'What are you doing this weekend?', display: 'What are you ___ this weekend?', answers: ['doing'] },
+    ],
+  },
+  {
+    type: 'dictation', title: 'Ở nơi làm việc', level: 'B1', order_index: 2,
+    items: [
+      { kind: 'dictation', text: 'Could you send me the report by Friday?', answers: ['Could you send me the report by Friday?'] },
+      { kind: 'dictation', text: 'The meeting has been moved to three o clock.', answers: ['The meeting has been moved to three o clock.'] },
+      { kind: 'dictation', text: 'I am responsible for training new staff.', answers: ['I am responsible for training new staff.'] },
+      { kind: 'fill_blank', text: 'The project was completed on time.', display: 'The project was ___ on time.', answers: ['completed'] },
+    ],
+  },
+  {
+    type: 'dictation', title: 'Ý kiến & tranh luận', level: 'B2', order_index: 2,
+    items: [
+      { kind: 'dictation', text: 'In my opinion, remote work has many benefits.', answers: ['In my opinion, remote work has many benefits.'] },
+      { kind: 'dictation', text: 'On the other hand, it can feel isolating.', answers: ['On the other hand, it can feel isolating.'] },
+      { kind: 'dictation', text: 'We need to weigh the pros and cons carefully.', answers: ['We need to weigh the pros and cons carefully.'] },
+      { kind: 'fill_blank', text: 'This argument is not entirely convincing.', display: 'This argument is not ___ convincing.', answers: ['entirely'] },
+    ],
+  },
+
+  // ═══ THÊM: Ngữ pháp ═══
+  {
+    type: 'grammar', title: 'Số nhiều & mạo từ', level: 'A1', order_index: 2,
+    items: [
+      { kind: 'mcq', text: 'I have three ___.', options: ['book', 'books', 'bookes', 'a book'], answers: ['books'] },
+      { kind: 'mcq', text: 'She is ___ teacher.', options: ['a', 'an', 'the', 'some'], answers: ['a'] },
+      { kind: 'mcq', text: 'There is ___ apple on the table.', options: ['a', 'an', 'two', 'many'], answers: ['an'] },
+      { kind: 'reorder', text: '', display: 'Sắp xếp thành câu đúng:', options: ['are', 'there', 'children', 'many'], answers: ['There are many children'] },
+      { kind: 'write', text: 'Đặt một câu có danh từ số nhiều (thêm "s").', answers: [], hint: 'vd: I like apples.' },
+    ],
+  },
+  {
+    type: 'grammar', title: 'So sánh hơn & nhất', level: 'A2', order_index: 2,
+    items: [
+      { kind: 'mcq', text: 'This book is ___ than that one.', options: ['good', 'better', 'best', 'gooder'], answers: ['better'] },
+      { kind: 'mcq', text: 'She is the ___ student in class.', options: ['tall', 'taller', 'tallest', 'most tall'], answers: ['tallest'] },
+      { kind: 'mcq', text: 'A car is ___ expensive than a bike.', options: ['more', 'most', 'much', 'very'], answers: ['more'] },
+      { kind: 'reorder', text: '', display: 'Sắp xếp thành câu đúng:', options: ['is', 'she', 'than', 'taller', 'me'], answers: ['She is taller than me'] },
+      { kind: 'write', text: 'Viết một câu so sánh dùng "than".', answers: [], hint: 'vd: Summer is hotter than winter.' },
+    ],
+  },
+  {
+    type: 'grammar', title: 'Mệnh đề quan hệ', level: 'B1', order_index: 2,
+    items: [
+      { kind: 'mcq', text: 'The man ___ called you is my uncle.', options: ['who', 'which', 'whose', 'where'], answers: ['who'] },
+      { kind: 'mcq', text: 'This is the house ___ I grew up.', options: ['where', 'which', 'who', 'when'], answers: ['where'] },
+      { kind: 'mcq', text: 'I like the book ___ you gave me.', options: ['which', 'who', 'whose', 'where'], answers: ['which'] },
+      { kind: 'reorder', text: '', display: 'Sắp xếp thành câu đúng:', options: ['who', 'the', 'girl', 'sings', 'well'], answers: ['The girl who sings well'] },
+      { kind: 'write', text: 'Viết một câu dùng "who" hoặc "which".', answers: [], hint: 'mệnh đề quan hệ' },
+    ],
+  },
+  {
+    type: 'grammar', title: 'Đảo ngữ & giả định', level: 'B2', order_index: 2,
+    items: [
+      { kind: 'mcq', text: 'Never ___ I seen such a beautiful place.', options: ['have', 'has', 'had', 'do'], answers: ['have'] },
+      { kind: 'mcq', text: 'If I ___ you, I would accept the offer.', options: ['were', 'was', 'am', 'be'], answers: ['were'] },
+      { kind: 'mcq', text: 'Not only ___ he late, but he also forgot the keys.', options: ['was', 'is', 'were', 'be'], answers: ['was'] },
+      { kind: 'reorder', text: '', display: 'Sắp xếp thành câu đúng:', options: ['I', 'had', 'known', 'if', 'only'], answers: ['If only I had known'] },
+      { kind: 'write', text: 'Viết một câu điều kiện loại 2 (If + quá khứ, would...).', answers: [], hint: 'If I had..., I would...' },
+    ],
+  },
+
+  // ═══ THÊM: Nghe & Nói ═══
+  {
+    type: 'shadowing', title: 'Câu hằng ngày (2)', level: 'A1', order_index: 2,
+    items: [
+      { kind: 'shadowing', text: 'Nice to meet you.', answers: ['Nice to meet you.'] },
+      { kind: 'shadowing', text: 'See you tomorrow.', answers: ['See you tomorrow.'] },
+      { kind: 'shadowing', text: 'I am very tired today.', answers: ['I am very tired today.'] },
+      { kind: 'shadowing', text: 'Where is the bus stop?', answers: ['Where is the bus stop?'] },
+    ],
+  },
+  {
+    type: 'shadowing', title: 'Hỏi đường & mua sắm', level: 'A2', order_index: 2,
+    items: [
+      { kind: 'shadowing', text: 'How much does this cost?', answers: ['How much does this cost?'] },
+      { kind: 'shadowing', text: 'Can you show me the way to the market?', answers: ['Can you show me the way to the market?'] },
+      { kind: 'shadowing', text: 'I am just looking, thank you.', answers: ['I am just looking, thank you.'] },
+    ],
+  },
+  {
+    type: 'shadowing', title: 'Diễn đạt ý kiến', level: 'B1', order_index: 2,
+    items: [
+      { kind: 'shadowing', text: 'I think that is a great idea.', answers: ['I think that is a great idea.'] },
+      { kind: 'shadowing', text: 'To be honest, I am not sure about that.', answers: ['To be honest, I am not sure about that.'] },
+      { kind: 'shadowing', text: 'Let me think about it for a moment.', answers: ['Let me think about it for a moment.'] },
+    ],
+  },
+  {
+    type: 'shadowing', title: 'Câu trang trọng', level: 'B2', order_index: 2,
+    items: [
+      { kind: 'shadowing', text: 'I am writing to express my interest in the position.', answers: ['I am writing to express my interest in the position.'] },
+      { kind: 'shadowing', text: 'Thank you for your time and consideration.', answers: ['Thank you for your time and consideration.'] },
+      { kind: 'shadowing', text: 'Please do not hesitate to contact me.', answers: ['Please do not hesitate to contact me.'] },
+    ],
+  },
 ];
 
 interface VocabWord {
@@ -212,6 +328,12 @@ const VOCAB: VocabSet[] = [
       { word: 'friend', meaning: 'bạn bè', ipa: '/frend/', example: 'She is my best friend.' },
       { word: 'happy', meaning: 'vui, hạnh phúc', ipa: '/ˈhæp.i/', example: 'I am happy to see you.' },
       { word: 'school', meaning: 'trường học', ipa: '/skuːl/', example: 'The children go to school.' },
+      { word: 'book', meaning: 'quyển sách', ipa: '/bʊk/', example: 'I read a book before bed.' },
+      { word: 'family', meaning: 'gia đình', ipa: '/ˈfæm.əl.i/', example: 'I love my family.' },
+      { word: 'eat', meaning: 'ăn', ipa: '/iːt/', example: 'We eat dinner at seven.' },
+      { word: 'car', meaning: 'xe hơi', ipa: '/kɑːr/', example: 'My car is blue.' },
+      { word: 'morning', meaning: 'buổi sáng', ipa: '/ˈmɔː.nɪŋ/', example: 'Good morning, everyone!' },
+      { word: 'work', meaning: 'làm việc; công việc', ipa: '/wɜːk/', example: 'I go to work by bus.' },
     ],
   },
   {
@@ -223,6 +345,12 @@ const VOCAB: VocabSet[] = [
       { word: 'expensive', meaning: 'đắt đỏ', ipa: '/ɪkˈspen.sɪv/', example: 'This phone is too expensive.' },
       { word: 'remember', meaning: 'nhớ', ipa: '/rɪˈmem.bər/', example: 'Please remember to call me.' },
       { word: 'often', meaning: 'thường xuyên', ipa: '/ˈɒf.ən/', example: 'We often eat out on Fridays.' },
+      { word: 'enough', meaning: 'đủ', ipa: '/ɪˈnʌf/', example: 'We have enough time.' },
+      { word: 'careful', meaning: 'cẩn thận', ipa: '/ˈkeə.fəl/', example: 'Be careful on the road.' },
+      { word: 'invite', meaning: 'mời', ipa: '/ɪnˈvaɪt/', example: 'They invited us to dinner.' },
+      { word: 'busy', meaning: 'bận rộn', ipa: '/ˈbɪz.i/', example: 'I am busy this week.' },
+      { word: 'health', meaning: 'sức khỏe', ipa: '/helθ/', example: 'Health is very important.' },
+      { word: 'decide', meaning: 'quyết định', ipa: '/dɪˈsaɪd/', example: 'I cannot decide what to eat.' },
     ],
   },
   {
@@ -234,6 +362,12 @@ const VOCAB: VocabSet[] = [
       { word: 'improve', meaning: 'cải thiện', ipa: '/ɪmˈpruːv/', example: 'I want to improve my English.' },
       { word: 'opportunity', meaning: 'cơ hội', ipa: '/ˌɒp.əˈtʃuː.nə.ti/', example: 'This is a great opportunity.' },
       { word: 'suggest', meaning: 'đề nghị, gợi ý', ipa: '/səˈdʒest/', example: 'I suggest we take a break.' },
+      { word: 'require', meaning: 'yêu cầu, cần', ipa: '/rɪˈkwaɪər/', example: 'This job requires patience.' },
+      { word: 'benefit', meaning: 'lợi ích', ipa: '/ˈben.ɪ.fɪt/', example: 'Exercise has many benefits.' },
+      { word: 'perhaps', meaning: 'có lẽ', ipa: '/pəˈhæps/', example: 'Perhaps we should wait.' },
+      { word: 'reduce', meaning: 'giảm', ipa: '/rɪˈdʒuːs/', example: 'We must reduce waste.' },
+      { word: 'confident', meaning: 'tự tin', ipa: '/ˈkɒn.fɪ.dənt/', example: 'She is confident about the exam.' },
+      { word: 'experience', meaning: 'kinh nghiệm; trải nghiệm', ipa: '/ɪkˈspɪə.ri.əns/', example: 'He has a lot of experience.' },
     ],
   },
   {
@@ -245,6 +379,12 @@ const VOCAB: VocabSet[] = [
       { word: 'inevitable', meaning: 'không thể tránh khỏi', ipa: '/ɪˈnev.ɪ.tə.bəl/', example: 'Change is inevitable.' },
       { word: 'thorough', meaning: 'kỹ lưỡng', ipa: '/ˈθʌr.ə/', example: 'She did a thorough review.' },
       { word: 'compromise', meaning: 'thỏa hiệp', ipa: '/ˈkɒm.prə.maɪz/', example: 'Both sides had to compromise.' },
+      { word: 'consequence', meaning: 'hậu quả', ipa: '/ˈkɒn.sɪ.kwəns/', example: 'Every action has consequences.' },
+      { word: 'furthermore', meaning: 'hơn nữa', ipa: '/ˌfɜː.ðəˈmɔːr/', example: 'Furthermore, it saves money.' },
+      { word: 'emphasize', meaning: 'nhấn mạnh', ipa: '/ˈem.fə.saɪz/', example: 'I want to emphasize this point.' },
+      { word: 'reluctant', meaning: 'miễn cưỡng', ipa: '/rɪˈlʌk.tənt/', example: 'He was reluctant to agree.' },
+      { word: 'sustainable', meaning: 'bền vững', ipa: '/səˈsteɪ.nə.bəl/', example: 'We need sustainable energy.' },
+      { word: 'perspective', meaning: 'góc nhìn, quan điểm', ipa: '/pəˈspek.tɪv/', example: 'From my perspective, it works.' },
     ],
   },
 ];
