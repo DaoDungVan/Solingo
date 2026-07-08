@@ -6,5 +6,8 @@ dist/
 *.log
 .DS_Store
 
+# Công cụ dev (Claude Code) — không đưa lên repo
+.claude/
+
 # audio cache sinh ra khi chạy (TTS)
 backend/storage/
