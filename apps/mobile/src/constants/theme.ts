@@ -9,14 +9,14 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
-    primary: '#2563EB',
-    onPrimary: '#ffffff',
-    border: '#D9DBE0',
+    text: '#0F1B3D', // navy đậm (dịu hơn đen)
+    background: '#EEF3FF', // nền xanh trắng nhạt theo logo
+    backgroundElement: '#FFFFFF', // thẻ trắng nổi trên nền xanh nhạt
+    backgroundSelected: '#DDE7FF',
+    textSecondary: '#5B6B8C',
+    primary: '#2563EB', // xanh logo
+    onPrimary: '#FFFFFF',
+    border: '#D8E1F5',
     danger: '#DC2626',
     success: '#16A34A',
   },

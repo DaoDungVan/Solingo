@@ -1,8 +1,9 @@
-import { DarkTheme, DefaultTheme, Stack, ThemeProvider, useRouter, useSegments } from 'expo-router';
+import { DefaultTheme, Stack, ThemeProvider, useRouter, useSegments } from 'expo-router';
 import { useEffect } from 'react';
-import { ActivityIndicator, useColorScheme, View } from 'react-native';
+import { ActivityIndicator, View } from 'react-native';
 
 import { AuthProvider, useAuth } from '@/context/auth-context';
+import { useTheme } from '@/hooks/use-theme';
 
 // Điều hướng bảo vệ: chưa đăng nhập → về (auth); đã đăng nhập mà đang ở (auth) → vào (app).
 function useProtectedRoute() {
@@ -28,12 +29,13 @@ function useProtectedRoute() {
 
 function RootNavigator() {
   const { loading } = useAuth();
+  const c = useTheme();
   useProtectedRoute();
 
   if (loading) {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <ActivityIndicator />
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: c.background }}>
+        <ActivityIndicator color={c.primary} />
       </View>
     );
   }
@@ -48,9 +50,8 @@ function RootNavigator() {
 }
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <ThemeProvider value={DefaultTheme}>
       <AuthProvider>
         <RootNavigator />
       </AuthProvider>
