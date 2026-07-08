@@ -92,7 +92,7 @@ export default function OnboardingScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 24, gap: 8, paddingTop: 72 },
+  container: { padding: 24, gap: 8, paddingTop: 72, width: '100%', maxWidth: 560, alignSelf: 'center' },
   hi: { fontSize: 15 },
   title: { fontSize: 26, fontWeight: '800' },
   subtitle: { fontSize: 14, marginBottom: 16 },
